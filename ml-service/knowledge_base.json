@@ -1,0 +1,34 @@
+[
+  {
+    "doc_id": "MODI_001",
+    "metadata": { "district": "Bengaluru", "year": 1954, "type": "Land Record" },
+    "hierarchy": {
+      "level": "root",
+      "summary": "1954 Land registry for survey number 42.",
+      "sections": [
+        {
+          "title": "Header Information",
+          "layout": "header_block",
+          "content": "Government of Mysore, Revenue Department.",
+          "chunks": ["Survey No: 42", "Village: Hebbal"]
+        },
+        {
+          "title": "Ownership Details",
+          "layout": "table_grid",
+          "content": "List of individuals holding title to the land.",
+          "chunks": [
+            "Pranjal H Dohare - Primary Owner - 2.5 Acres",
+            "Secondary Holder - 1.0 Acres",
+            {
+  "survey_no_42": {
+    "status": "In Litigation",
+    "case_id": "OS/123/2023",
+    "court": "Bengaluru Civil Court"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
