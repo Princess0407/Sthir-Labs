@@ -1,0 +1,252 @@
+[
+  {
+    "ulpin": "29310405006789",
+    "state": "Karnataka",
+    "district": "Bangalore Rural",
+    "village": "Devanahalli",
+    "area_acres": 2.1,
+    "coordinates": [
+      [
+        13.2487,
+        77.7112
+      ],
+      [
+        13.249,
+        77.712
+      ],
+      [
+        13.2482,
+        77.7123
+      ],
+      [
+        13.2479,
+        77.7115
+      ]
+    ]
+  },
+  {
+    "ulpin": "29310405006790",
+    "state": "Karnataka",
+    "district": "Tumkur",
+    "village": "Belagumba",
+    "area_acres": 1.8,
+    "coordinates": [
+      [
+        13.3402,
+        77.0921
+      ],
+      [
+        13.3405,
+        77.0928
+      ],
+      [
+        13.3398,
+        77.0931
+      ],
+      [
+        13.3396,
+        77.0923
+      ]
+    ]
+  },
+  {
+    "ulpin": "27120503004567",
+    "state": "Maharashtra",
+    "district": "Pune",
+    "village": "Baramati",
+    "area_acres": 3.4,
+    "coordinates": [
+      [
+        18.1502,
+        74.5791
+      ],
+      [
+        18.1506,
+        74.58
+      ],
+      [
+        18.1498,
+        74.5803
+      ],
+      [
+        18.1495,
+        74.5794
+      ]
+    ]
+  },
+  {
+    "ulpin": "27120503004568",
+    "state": "Maharashtra",
+    "district": "Nashik",
+    "village": "Sinnar",
+    "area_acres": 2.7,
+    "coordinates": [
+      [
+        19.8504,
+        73.9871
+      ],
+      [
+        19.8508,
+        73.988
+      ],
+      [
+        19.85,
+        73.9883
+      ],
+      [
+        19.8497,
+        73.9874
+      ]
+    ]
+  },
+  {
+    "ulpin": "24110802003455",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow",
+    "village": "Malihabad",
+    "area_acres": 1.5,
+    "coordinates": [
+      [
+        26.9151,
+        80.7123
+      ],
+      [
+        26.9154,
+        80.713
+      ],
+      [
+        26.9147,
+        80.7132
+      ],
+      [
+        26.9145,
+        80.7125
+      ]
+    ]
+  },
+  {
+    "ulpin": "24110802003456",
+    "state": "Uttar Pradesh",
+    "district": "Varanasi",
+    "village": "Ramnagar",
+    "area_acres": 2.3,
+    "coordinates": [
+      [
+        25.2695,
+        83.0241
+      ],
+      [
+        25.2698,
+        83.0249
+      ],
+      [
+        25.2691,
+        83.0252
+      ],
+      [
+        25.2689,
+        83.0244
+      ]
+    ]
+  },
+  {
+    "ulpin": "22100201002344",
+    "state": "Rajasthan",
+    "district": "Jaipur",
+    "village": "Chomu",
+    "area_acres": 4.2,
+    "coordinates": [
+      [
+        27.1698,
+        75.7231
+      ],
+      [
+        27.1702,
+        75.724
+      ],
+      [
+        27.1694,
+        75.7243
+      ],
+      [
+        27.1691,
+        75.7234
+      ]
+    ]
+  },
+  {
+    "ulpin": "22100201002345",
+    "state": "Rajasthan",
+    "district": "Udaipur",
+    "village": "Girwa",
+    "area_acres": 3.1,
+    "coordinates": [
+      [
+        24.5857,
+        73.712
+      ],
+      [
+        24.5861,
+        73.7129
+      ],
+      [
+        24.5853,
+        73.7132
+      ],
+      [
+        24.585,
+        73.7123
+      ]
+    ]
+  },
+  {
+    "ulpin": "31140706007812",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore",
+    "village": "Pollachi",
+    "area_acres": 2.9,
+    "coordinates": [
+      [
+        10.6582,
+        77.0075
+      ],
+      [
+        10.6586,
+        77.0083
+      ],
+      [
+        10.6579,
+        77.0086
+      ],
+      [
+        10.6576,
+        77.0078
+      ]
+    ]
+  },
+  {
+    "ulpin": "31140706007813",
+    "state": "Tamil Nadu",
+    "district": "Madurai",
+    "village": "Thiruparankundram",
+    "area_acres": 1.9,
+    "coordinates": [
+      [
+        9.8821,
+        78.0732
+      ],
+      [
+        9.8825,
+        78.074
+      ],
+      [
+        9.8818,
+        78.0743
+      ],
+      [
+        9.8815,
+        78.0735
+      ]
+    ]
+  }
+]
