@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { AlertTriangle, CheckCircle2, Clock, TrendingUp } from 'lucide-react';
+import { AlertTriangle, Clock, TrendingUp } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { containerVariants, itemVariants } from '@/lib/animations';
 
@@ -18,13 +18,13 @@ export function IntelligentVerdict() {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setTimeLeft((prev) => (prev > 0 ? prev - 1 : 0));
+      setTimeLeft((prev) => prev > 0 ? prev - 1 : 0);
     }, 1000);
     return () => clearInterval(timer);
   }, []);
 
   const hours = Math.floor(timeLeft / 3600);
-  const minutes = Math.floor((timeLeft % 3600) / 60);
+  const minutes = Math.floor(timeLeft % 3600 / 60);
   const seconds = timeLeft % 60;
 
   const gaugePercentage = fraudScore / 100;
@@ -35,8 +35,8 @@ export function IntelligentVerdict() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="space-y-4"
-    >
+      className="space-y-4">
+      
       <motion.div variants={itemVariants} className="space-y-2">
         <h2 className="text-xl font-bold text-foreground">Intelligent Verdict</h2>
         <p className="text-sm text-muted-foreground">AI-powered fraud probability assessment</p>
@@ -46,8 +46,8 @@ export function IntelligentVerdict() {
         {/* Fraud Probability Gauge */}
         <motion.div
           variants={itemVariants}
-          className="p-6 rounded border neon-border bg-gradient-to-br from-background to-muted/20 space-y-4"
-        >
+          className="p-6 rounded border neon-border bg-gradient-to-br from-background to-muted/20 space-y-4">
+          
           <div className="flex items-center justify-between">
             <h3 className="font-semibold text-foreground">Fraud Probability</h3>
             <TrendingUp className="w-4 h-4 text-primary" />
@@ -64,8 +64,8 @@ export function IntelligentVerdict() {
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
-                className="text-muted"
-              />
+                className="text-muted" />
+              
 
               {/* Progress circle */}
               <motion.circle
@@ -78,8 +78,8 @@ export function IntelligentVerdict() {
                 strokeDasharray={`${2 * Math.PI * 50}`}
                 strokeDashoffset={`${2 * Math.PI * 50 * (1 - gaugePercentage)}`}
                 strokeLinecap="round"
-                className="transition-all"
-              />
+                className="transition-all" />
+              
 
               <defs>
                 <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -95,8 +95,8 @@ export function IntelligentVerdict() {
                 <motion.div
                   animate={{ opacity: [0.8, 1, 0.8] }}
                   transition={{ duration: 2, repeat: Infinity }}
-                  className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-emerald-500"
-                >
+                  className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-emerald-500">
+                  
                   {fraudScore.toFixed(1)}%
                 </motion.div>
                 <p className="text-xs text-muted-foreground mt-1">Probability</p>
@@ -113,8 +113,8 @@ export function IntelligentVerdict() {
               <motion.div
                 animate={{ width: `${gaugePercentage * 100}%` }}
                 transition={{ type: 'spring', stiffness: 50, damping: 20 }}
-                className="h-full bg-gradient-to-r from-emerald-500 via-purple-500 to-red-500"
-              />
+                className="h-full bg-gradient-to-r from-emerald-500 via-purple-500 to-red-500" />
+              
             </div>
           </div>
         </motion.div>
@@ -122,14 +122,14 @@ export function IntelligentVerdict() {
         {/* Verdict Card */}
         <motion.div
           variants={itemVariants}
-          className="p-6 rounded border neon-border bg-gradient-to-br from-background to-muted/20 space-y-4"
-        >
+          className="p-6 rounded border neon-border bg-gradient-to-br from-background to-muted/20 space-y-4">
+          
           <div className="flex items-center justify-between">
             <h3 className="font-semibold text-foreground">Verification Status</h3>
             <motion.div
               animate={{ rotate: 360 }}
-              transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
-            >
+              transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}>
+              
               <Clock className="w-4 h-4 text-primary" />
             </motion.div>
           </div>
@@ -139,8 +139,8 @@ export function IntelligentVerdict() {
             <motion.div
               className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-sm font-medium text-yellow-700 dark:text-yellow-200"
               animate={{ opacity: [1, 0.8, 1] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            >
+              transition={{ duration: 2, repeat: Infinity }}>
+              
               <AlertTriangle className="w-3.5 h-3.5" />
               Under Review
             </motion.div>
@@ -168,8 +168,8 @@ export function IntelligentVerdict() {
                 className="text-2xl font-mono font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-emerald-500"
                 key={timeLeft}
                 initial={{ scale: 1.1 }}
-                animate={{ scale: 1 }}
-              >
+                animate={{ scale: 1 }}>
+                
                 {String(hours).padStart(2, '0')}:{String(minutes).padStart(2, '0')}:
                 {String(seconds).padStart(2, '0')}
               </motion.div>
@@ -181,40 +181,40 @@ export function IntelligentVerdict() {
       {/* Detailed Analysis */}
       <motion.div
         variants={itemVariants}
-        className="p-4 rounded border neon-border bg-muted/30 space-y-3"
-      >
+        className="p-4 rounded border neon-border bg-muted/30 space-y-3">
+        
         <h3 className="font-semibold text-foreground text-sm">Analysis Summary</h3>
         <div className="space-y-2 text-xs text-muted-foreground font-mono">
           <motion.p
             initial={{ opacity: 0, x: -10 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.1 }}
-          >
+            transition={{ delay: 0.1 }}>
+            
             {'> '} Watermark authenticity: VALID
           </motion.p>
           <motion.p
             initial={{ opacity: 0, x: -10 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.2 }}
-          >
+            transition={{ delay: 0.2 }}>
+            
             {'> '} Signature analysis: SUSPICIOUS
           </motion.p>
           <motion.p
             initial={{ opacity: 0, x: -10 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.3 }}
-          >
+            transition={{ delay: 0.3 }}>
+            
             {'> '} Document aging: ANOMALY DETECTED
           </motion.p>
           <motion.p
             initial={{ opacity: 0, x: -10 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.4 }}
-          >
+            transition={{ delay: 0.4 }}>
+            
             {'> '} Chain of custody: INCOMPLETE
           </motion.p>
         </div>
       </motion.div>
-    </motion.section>
-  );
+    </motion.section>);
+
 }

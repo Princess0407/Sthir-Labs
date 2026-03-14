@@ -72,12 +72,12 @@ func (s *SmartContract) ReadLandRecord(ctx contractapi.TransactionContextInterfa
 func (s *SmartContract) TriggerSuccession(ctx contractapi.TransactionContextInterface, ulpin string, newOwnerIDs []string, deathCertificateHash string) error {
 	// In a real implementation, the deathCertificateHash would be verified against an Oracle or external auth provider.
 	// For this prototype, we assume it's valid if provided.
-	
+
 	landRecord, err := s.ReadLandRecord(ctx, ulpin)
 	if err != nil {
 		return err
 	}
-	
+
 	if landRecord.Status != "Active" {
 		return fmt.Errorf("land record is not active, current status: %s", landRecord.Status)
 	}
@@ -86,7 +86,7 @@ func (s *SmartContract) TriggerSuccession(ctx contractapi.TransactionContextInte
 	// We simulate this partition by accepting multiple heirs (newOwnerIDs).
 	// Typically, the shares are equally divided among Class I heirs.
 	// We will serialize the new owners into a single string for simplicity in the owner field,
-	// or in an actual schema, change OwnerID to a list of owners. 
+	// or in an actual schema, change OwnerID to a list of owners.
 	// For this exercise, we join them as a comma-separated string if multiple.
 	var newOwnerStr string
 	for i, id := range newOwnerIDs {

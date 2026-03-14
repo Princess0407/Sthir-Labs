@@ -6,9 +6,9 @@ export const containerVariants = {
     opacity: 1,
     transition: {
       staggerChildren: 0.1,
-      delayChildren: 0.2,
-    },
-  },
+      delayChildren: 0.2
+    }
+  }
 };
 
 export const itemVariants = {
@@ -19,9 +19,9 @@ export const itemVariants = {
     transition: {
       type: 'spring',
       stiffness: 100,
-      damping: 12,
-    },
-  },
+      damping: 12
+    }
+  }
 };
 
 export const slideInVariants = {
@@ -32,17 +32,17 @@ export const slideInVariants = {
     transition: {
       type: 'spring',
       stiffness: 100,
-      damping: 15,
-    },
-  },
+      damping: 15
+    }
+  }
 };
 
 export const fadeInVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { duration: 0.5 },
-  },
+    transition: { duration: 0.5 }
+  }
 };
 
 export const pulseVariants = {
@@ -52,17 +52,17 @@ export const pulseVariants = {
     scale: 1,
     transition: {
       duration: 0.6,
-      ease: 'easeInOut',
-    },
+      ease: 'easeInOut'
+    }
   },
   pulse: {
     opacity: [0.5, 1, 0.5],
     transition: {
       duration: 2,
       repeat: Infinity,
-      ease: 'easeInOut',
-    },
-  },
+      ease: 'easeInOut'
+    }
+  }
 };
 
 export const scanLineVariants = {
@@ -72,8 +72,8 @@ export const scanLineVariants = {
     opacity: 1,
     transition: {
       duration: 1.2,
-      ease: 'easeOut',
-    },
+      ease: 'easeOut'
+    }
   },
   scan: {
     y: [0, 100],
@@ -81,9 +81,9 @@ export const scanLineVariants = {
     transition: {
       duration: 2,
       repeat: Infinity,
-      ease: 'linear',
-    },
-  },
+      ease: 'linear'
+    }
+  }
 };
 
 export const typewriterVariants = {
@@ -91,9 +91,9 @@ export const typewriterVariants = {
   visible: {
     width: 'auto',
     transition: {
-      duration: 0.5,
-    },
-  },
+      duration: 0.5
+    }
+  }
 };
 
 export const rotateVariants = {
@@ -103,9 +103,9 @@ export const rotateVariants = {
     transition: {
       duration: 20,
       repeat: Infinity,
-      ease: 'linear',
-    },
-  },
+      ease: 'linear'
+    }
+  }
 };
 
 export const glitchVariants = {
@@ -114,7 +114,7 @@ export const glitchVariants = {
     x: [0, -2, 2, -2, 0],
     transition: {
       duration: 0.3,
-      ease: 'easeInOut',
-    },
-  },
+      ease: 'easeInOut'
+    }
+  }
 };
