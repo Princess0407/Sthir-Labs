@@ -88,7 +88,8 @@ python main.py  # Ensure it runs on Port 8000 so that it can be fetched by the f
 ```
 Bash
 ```
-
+```
 cd SovereignVault/frontend
 npm install
 npm run dev
+```
